@@ -1,7 +1,6 @@
 const spur = require('spur-ioc');
 
 const express = require('express');
-const expressDevice = require('express-device');
 const methodOverride = require('method-override');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
@@ -13,7 +12,6 @@ module.exports = function injector() {
 
   ioc.registerDependencies({
     express,
-    expressDevice,
     methodOverride,
     cookieParser,
     bodyParser,
