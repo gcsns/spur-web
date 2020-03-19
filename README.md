@@ -178,7 +178,6 @@ List of external dependencies used and exposed by spur-web. They can be found at
 | Name               | Original Module Name                                             |
 | :----              | :----                                                            |
 | **express**        | [express](https://www.npmjs.org/package/express)                 |
-| **expressDevice**  | [express-device](https://www.npmjs.org/package/express-device)   |
 | **methodOverride** | [method-override](https://www.npmjs.org/package/method-override) |
 | **cookieParser**   | [cookie-parser](https://www.npmjs.org/package/cookie-parser)     |
 | **bodyParser**     | [body-parser](https://www.npmjs.org/package/body-parser)         |
@@ -203,7 +202,7 @@ All of the files under the `src/` directory are made available when this module 
 | Name                                | Source                                                        | Description                                                                                           |
 | :----                               | :----                                                         | :----                                                                                                 |
 | **HtmlErrorRender**                 | [code](src/handlers/HtmlErrorRender.js)                   | Sets basic error rendering for uncaught errors.                                                       |
-| **DefaultMiddleware**               | [code](src/middleware/DefaultMiddleware.js)               | Registers default express middleware: cookie parser, body parser, method override, and express device |
+| **DefaultMiddleware**               | [code](src/middleware/DefaultMiddleware.js)               | Registers default express middleware: cookie parser, body parser, and, method override |
 | **ErrorMiddleware**                 | [code](src/middleware/ErrorMiddleware.js)                 | Adds error handling for unhandled errors for requests.                                                |
 | **NoCacheMiddleware**               | [code](src/middleware/NoCacheMiddleware.js)               | Middleware for no cache headers |
 | **PromiseMiddleware**               | [code](src/middleware/PromiseMiddleware.js)               | Extends the response object with functionality to be used through promises. It unwraps promises as they are being resolved. |
