@@ -9,7 +9,9 @@
     "test-unit": "mocha ./test/unit/",
     "test-integration": "mocha ./test/integration/",
     "test": "npm run test-unit && npm run test-integration",
-    "start": "node example/start.js"
+    "start": "node example/start.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -64,7 +66,8 @@
     "lodash.values": "4.3.0",
     "method-override": "^2.3.1",
     "spur-ioc": "^1.0.0",
-    "winston": "^2.3.0"
+    "winston": "^2.3.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "^4.1.1",
@@ -75,5 +78,6 @@
     "spur-config": "^2.0.0",
     "mocha": "^3.5.0",
     "sinon": "^3.2.1"
-  }
+  },
+  "snyk": true
 }
